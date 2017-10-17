@@ -23,4 +23,8 @@ SELECT "username", "account_balance" FROM "syntax_practice" ORDER BY "account_ba
  --7. Get all users with account balances that are more than $100.
 SELECT * FROM "syntax_practice" where "account_balance" > '100';
 
---8. 
+--8. Add a new record;
+INSERT INTO "syntax_practice"(username, city, transactions_completed, transactions_attempted, account_balance) VALUES ('Blaze', 'Minneapolis', 15, 15, 1000000);
+
+--9. Get rid of users that reside in miami OR phoenix and have completed fewer than 5 transactions.
+DELETE FROM "syntax_practice" WHERE "city" LIKE 'miami' OR "city" LIKE 'phoenix' AND "transactions_completed" < '5';
