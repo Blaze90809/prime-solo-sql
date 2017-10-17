@@ -19,3 +19,8 @@ SELECT "username", "account_balance" FROM "syntax_practice" ORDER BY "account_ba
 --6. Get the username and account balance of the 3 users with the lowest balances, sort lowest to highest balance.
 SELECT "username", "account_balance" FROM "syntax_practice" ORDER BY "account_balance" asc
  limit 3;
+
+ --7. Get all users with account balances that are more than $100.
+SELECT * FROM "syntax_practice" where "account_balance" > '100';
+
+--8. 
